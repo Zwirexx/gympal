@@ -1,4 +1,4 @@
-<main class="bg-[#222222] h-screen px-32 py-11 overflow-hidden">
+<section class="bg-[#222222] h-screen px-32 py-11">
 	<img src="src/assets/jacked-guy-bg.jpg" alt="" class="absolute top-0 right-0 h-full z-0" />
 	<div class="relative flex items-center z-10">
 		<div>
@@ -24,13 +24,34 @@
 			<div>
 				<span class="block text-[#b5b5b5] text-xl nunito mt-12"
 					>Transform your fitness journey with our app. Monitor progress, set goals, and conquer
-					milestones effortlessly for a healthier, stronger you.</span
-				>
+					milestones effortlessly for a healthier, stronger you.
+				</span>
 			</div>
 			<button
 				type="button"
-				class="py-3 px-8 bg-[#F2FD84] max-w-56 text-xl font-bold nutino-sans mt-12">JOIN NOW</button
-			>
+				class="py-3 px-8 bg-[#F2FD84] max-w-56 text-xl font-bold nutino-sans mt-12"
+				>JOIN NOW
+			</button>
 		</div>
 	</div>
-</main>
+</section>
+<section class="bg-[#222222] h-screen px-32 pt-28">
+	<div class="flex justify-center">
+		<div class="text-white text-7xl hakuna-sans font-bold">
+			<span class="block">JOIN OUR COMMUNITY</span>
+		</div>
+	</div>
+	<div class="flex justify-center">
+		<div class="pt-20 flex max-w-[1400px]">
+			<img src="src/assets/joinourcommunity.png" alt="" class="max-h-80" />
+			<div class="ml-12 flex justify-center flex-col">
+				<span class="block text-white text-2xl nunito">Be a part of something great!</span>
+				<span class="block text-[#b5b5b5] text-xl nunito mt-2"
+					>Connect with like-minded individuals, share your journey, and get inspired. Together,
+					we're building a supportive space for all fitness enthusiasts. Join us and let's achieve
+					our goals together!
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
