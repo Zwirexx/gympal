@@ -6,10 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 html {
   scroll-behavior: smooth;
+  overflow: overlay;
 }
-
 .nunito {
   font-family: 'Nunito', sans-serif;
 }
@@ -18,5 +20,11 @@ html {
 }
 .hakuna-sans {
   font-family: 'Hakuna Sans', sans-serif;
+}
+.glass {
+  background: rgba(57,57,57, 0.4);
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border: 1px solid #b5b5b5;
 }
 

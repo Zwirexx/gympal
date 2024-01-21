@@ -1,9 +1,9 @@
 <title>Meet GymPal</title>
 <section class="bg-[#222222] h-screen px-32 pb-11">
 	<img src="src/assets/jacked-guy-bg.jpg" alt="" class="absolute top-0 right-0 h-full z-0" />
-	<div class="relative flex z-10 flex-col max-w-[60%] justify-center h-full">
-		<div>
-			<div class="text-white text-8xl hakuna-sans font-bold">
+	<div class="relative flex z-10 flex-col justify-center h-full">
+		<div class="max-w-[60%] mt-auto">
+			<div class="text-white text-7xl hakuna-sans font-bold">
 				<span class="block">THINK LESS</span>
 				<span class="block">GET STRONG</span>
 			</div>
@@ -19,44 +19,70 @@
 				>JOIN NOW
 			</button>
 		</div>
-	</div>
-</section>
-<section class="bg-[#222222] px-32 pb-28">
-	<div class="flex justify-center">
-		<div class="text-white text-6xl hakuna-sans font-bold">
-			<span class="block">TRACK YOUR WORKOUTS</span>
-		</div>
-	</div>
-	<div class="flex justify-center">
-		<div class="pt-20 flex max-w-[1400px]">
-			<div class="mr-12 flex justify-center flex-col">
-				<span class="block text-white text-2xl nunito">The easy way to track your workouts.</span>
-				<span class="block text-[#b5b5b5] text-xl nunito mt-2"
-					>No more math headaches - our built-in calculator does the heavy lifting. Just log your
-					exercises, and let us handle the rest. Easy, right? Focus on your gains, not the math.
-				</span>
+		<div class="flex glass w-full mb-0 mt-auto h-48 text-white justify-evenly items-center text-lg">
+			<div>
+				<span class="block hakuna-sans text-5xl">100K</span>
+				<span class="block nunito font-bold">Active users</span>
+				<span class="block nunito text-[#b5b5b5]">Our community is growing fast!</span>
 			</div>
-			<img src="src/assets/easytracking.png" alt="" class="max-h-80" />
-		</div>
-	</div>
-</section>
-<section class="bg-[#222222] px-32 py-28">
-	<div class="flex justify-center">
-		<div class="text-white text-6xl hakuna-sans font-bold">
-			<span class="block">JOIN OUR COMMUNITY</span>
-		</div>
-	</div>
-	<div class="flex justify-center">
-		<div class="pt-20 flex max-w-[1400px]">
-			<img src="src/assets/joinourcommunity.png" alt="" class="max-h-80" />
-			<div class="ml-12 flex justify-center flex-col">
-				<span class="block text-white text-2xl nunito">Be a part of something great!</span>
-				<span class="block text-[#b5b5b5] text-xl nunito mt-2"
-					>Connect with like-minded individuals, share your journey, and get inspired. Together,
-					we're building a supportive space for all fitness enthusiasts. Join us and let's achieve
-					our goals together!
-				</span>
+			<div>
+				<span class="block hakuna-sans text-5xl">10</span>
+				<span class="block nunito font-bold">Free routines</span>
+				<span class="block nunito text-[#b5b5b5]">Pick from various workout plans.</span>
+			</div>
+			<div>
+				<span class="block hakuna-sans text-5xl">99%</span>
+				<span class="block nunito font-bold">Happy Customers</span>
+				<span class="block nunito text-[#b5b5b5]">Nearly everyone loves our app!</span>
 			</div>
 		</div>
 	</div>
 </section>
+<main class="bg-[#222222]">
+	<section class=" px-32 pb-28">
+		<div class="flex justify-center">
+			<div class="text-white text-6xl hakuna-sans font-bold mt-20">
+				<span class="block">TRACK YOUR WORKOUTS</span>
+			</div>
+		</div>
+		<div class="flex justify-center">
+			<div class="pt-20 flex max-w-[1400px]">
+				<div class="mr-12 flex justify-center flex-col">
+					<span class="block text-white text-2xl nunito">The easy way to track your workouts.</span>
+					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
+						>No more math headaches - our built-in calculator does the heavy lifting. Just log your
+						exercises, and let us handle the rest. Easy, right? Focus on your gains, not the math.
+					</span>
+				</div>
+				<img src="src/assets/easytracking.png" alt="" class="max-h-80" />
+			</div>
+		</div>
+	</section>
+	<section class=" px-32 py-28">
+		<div class="flex justify-center">
+			<div class="text-white text-6xl hakuna-sans font-bold">
+				<span class="block">JOIN OUR COMMUNITY</span>
+			</div>
+		</div>
+		<div class="flex justify-center">
+			<div class="pt-20 flex max-w-[1400px]">
+				<img src="src/assets/joinourcommunity.png" alt="" class="max-h-80" />
+				<div class="ml-12 flex justify-center flex-col">
+					<span class="block text-white text-2xl nunito">Be a part of something great!</span>
+					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
+						>Connect with like-minded individuals, share your journey, and get inspired. Together,
+						we're building a supportive space for all fitness enthusiasts. Join us and let's achieve
+						our goals together!
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<style>
+	main {
+		background-image: url('src/assets/bg.png');
+		background-repeat: no-repeat;
+	}
+</style>
