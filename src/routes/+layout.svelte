@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import PageLoader from './PageLoader.svelte';
+	import Icon from '@iconify/svelte';
 </script>
 
 <PageLoader />
@@ -29,3 +30,19 @@
 </nav>
 
 <slot />
+
+<footer class="text-white">
+	<div class="bg-[#181818] px-32 py-16 flex justify-center">
+		<div class="w-1/3 flex justify-between">
+			<a href="/"><Icon icon="ri:instagram-line" color="#F2FD84" width="48" height="48" /> </a>
+			<a href="/"
+				><Icon icon="ri:facebook-circle-line" color="#F2FD84" width="48" height="48" />
+			</a>
+			<a href="/"><Icon icon="ri:twitter-x-fill" color="#F2FD84" width="48" height="48" /> </a>
+			<a href="https://github.com/Zwirexx" target="_blank">
+				<Icon icon="ri:github-line" color="#F2FD84" width="48" height="48" />
+			</a>
+		</div>
+	</div>
+	<div class="bg-[#111111] px-32 py-8 text-center">Created by Zwirexx</div>
+</footer>

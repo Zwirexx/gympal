@@ -13,11 +13,13 @@
 					milestones effortlessly for a healthier, stronger you.
 				</span>
 			</div>
-			<button
+			<a
+				href="https://youtu.be/gkjSXBCVo8E"
+				target="_blank"
 				type="button"
-				class="py-3 px-8 bg-[#F2FD84] max-w-56 text-xl font-bold nutino-sans mt-12"
+				class="py-3 px-8 bg-[#F2FD84] max-w-56 text-xl font-bold nutino-sans mt-12 hover:bg-opacity-85 transition-all duration-200"
 				>JOIN NOW
-			</button>
+			</a>
 		</div>
 		<div class="flex glass w-full mb-0 mt-auto h-48 text-white justify-evenly items-center text-lg">
 			<div>
@@ -47,14 +49,33 @@
 		</div>
 		<div class="flex justify-center">
 			<div class="pt-20 flex max-w-[1400px]">
-				<div class="mr-12 flex justify-center flex-col">
+				<img loading="lazy" src="src/assets/easytracking.png" alt="" class="max-h-80" />
+				<div class="ml-12 flex justify-center flex-col">
 					<span class="block text-white text-2xl nunito">The easy way to track your workouts.</span>
 					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
 						>No more math headaches - our built-in calculator does the heavy lifting. Just log your
 						exercises, and let us handle the rest. Easy, right? Focus on your gains, not the math.
 					</span>
 				</div>
-				<img src="src/assets/easytracking.png" alt="" class="max-h-80" />
+			</div>
+		</div>
+	</section>
+	<section class=" px-32 py-28">
+		<div class="flex justify-center">
+			<div class="text-white text-6xl hakuna-sans font-bold">
+				<span class="block">MEASURE YOUR PROGRESS</span>
+			</div>
+		</div>
+		<div class="flex justify-center">
+			<div class="pt-20 flex max-w-[1400px]">
+				<div class="mr-12 flex justify-center flex-col">
+					<span class="block text-white text-2xl nunito">See your progress unfold!</span>
+					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
+						>Our app gives you a clear view of your weightlifting journey. Track your lifts over
+						time, watch your strength grow, and celebrate your achievements.
+					</span>
+				</div>
+				<img loading="lazy" src="src/assets/progress.png" alt="" class="max-h-80" />
 			</div>
 		</div>
 	</section>
@@ -66,7 +87,7 @@
 		</div>
 		<div class="flex justify-center">
 			<div class="pt-20 flex max-w-[1400px]">
-				<img src="src/assets/joinourcommunity.png" alt="" class="max-h-80" />
+				<img loading="lazy" src="src/assets/joinourcommunity.png" alt="" class="max-h-80" />
 				<div class="ml-12 flex justify-center flex-col">
 					<span class="block text-white text-2xl nunito">Be a part of something great!</span>
 					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
@@ -84,5 +105,7 @@
 	main {
 		background-image: url('src/assets/bg.png');
 		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
 	}
 </style>
