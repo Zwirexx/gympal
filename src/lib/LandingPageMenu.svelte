@@ -15,7 +15,7 @@
 	></div>
 	<nav
 		transition:slide={{ duration: 300, easing: quintOut, axis: 'x' }}
-		class="bg-[#222222] fixed h-screen right-0 w-3/4 z-50 shadow-2xl shadow-black px-10 py-10"
+		class="bg-[#222222] fixed h-screen right-0 w-3/4 z-50 shadow-2xl shadow-black px-10 py-10 border-l border-[#454545]"
 	>
 		<div class="flex h-screen z-10 flex-col ml-10">
 			<div class="flex justify-end w-full mb-16">

@@ -55,7 +55,7 @@
 		</div>
 		<div class="flex justify-center">
 			<div class="pt-20 flex max-w-[1400px] flex-col md:flex-row">
-				<img loading="lazy" src="src/assets/easytracking.png" alt="" class="max-h-80" />
+				<img loading="lazy" src="src/assets/easytracking.png" alt="" class="md:max-h-80" />
 				<div class="mt-12 md:mt-0 md:ml-12 flex justify-center flex-col">
 					<span class="block text-white text-2xl nunito">The easy way to track your workouts.</span>
 					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
@@ -81,7 +81,7 @@
 						time, watch your strength grow, and celebrate your achievements.
 					</span>
 				</div>
-				<img loading="lazy" src="src/assets/progress.png" alt="" class="max-h-80" />
+				<img loading="lazy" src="src/assets/progress.png" alt="" class="md:max-h-80" />
 			</div>
 		</div>
 	</section>
@@ -93,7 +93,7 @@
 		</div>
 		<div class="flex justify-center">
 			<div class="pt-20 flex max-w-[1400px] flex-col md:flex-row">
-				<img loading="lazy" src="src/assets/joinourcommunity.png" alt="" class="max-h-80" />
+				<img loading="lazy" src="src/assets/joinourcommunity.png" alt="" class="md:max-h-80" />
 				<div class="mt-12 md:mt-0 md:ml-12 flex justify-center flex-col">
 					<span class="block text-white text-2xl nunito">Be a part of something great!</span>
 					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
