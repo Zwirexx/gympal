@@ -13,8 +13,8 @@
 	<div class="relative z-10">
 		<div class="lg:max-w-[60%]">
 			<div class="text-white text-7xl hakuna-sans font-bold">
-				<span class="block">THINK LOREM</span>
-				<span class="block">GET IPSUM</span>
+				<span class="block">THINK LESS</span>
+				<span class="block">GET STRONG</span>
 			</div>
 			<div>
 				<span class="block text-[#b5b5b5] text-xl nunito mt-6 md:mt-12"
