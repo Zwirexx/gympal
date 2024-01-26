@@ -1,10 +1,14 @@
+<script>
+	import img_jackedguy from '$lib/assets/jacked-guy-bg.jpg';
+	import img_easytracking from '$lib/assets/easytracking.png';
+	import img_progress from '$lib/assets/progress.png';
+	import img_joinourcommunity from '$lib/assets/joinourcommunity.png';
+	import img_stripes from '$lib/assets/bg.png';
+</script>
+
 <title>Meet GymPal</title>
 <section class="bg-[#222222] h-screen px-10 pb-11 md:px-32 md:pb-11">
-	<img
-		src="src/assets/jacked-guy-bg.jpg"
-		alt=""
-		class="hidden md:block absolute top-0 right-0 h-full z-0"
-	/>
+	<img src={img_jackedguy} alt="" class="hidden md:block absolute top-0 right-0 h-full z-0" />
 	<div class="relative flex z-10 flex-col justify-center h-full">
 		<div class="md:max-w-[60%] mt-auto">
 			<div class="text-white text-7xl hakuna-sans font-bold">
@@ -46,7 +50,10 @@
 		</div>
 	</div>
 </section>
-<main class="bg-[#222222]">
+<main
+	class="bg-[#222222] bg-no-repeat bg-center bg-cover"
+	style="background-image: url({img_stripes});"
+>
 	<section class="px-10 pb-11 md:px-32 md:pb-28">
 		<div class="flex justify-center">
 			<div class="text-white text-6xl hakuna-sans font-bold mt-20">
@@ -55,7 +62,7 @@
 		</div>
 		<div class="flex justify-center">
 			<div class="pt-20 flex max-w-[1400px] flex-col md:flex-row">
-				<img loading="lazy" src="src/assets/easytracking.png" alt="" class="md:max-h-80" />
+				<img loading="lazy" src={img_easytracking} alt="" class="md:max-h-80" />
 				<div class="mt-12 md:mt-0 md:ml-12 flex justify-center flex-col">
 					<span class="block text-white text-2xl nunito">The easy way to track your workouts.</span>
 					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
@@ -81,7 +88,7 @@
 						time, watch your strength grow, and celebrate your achievements.
 					</span>
 				</div>
-				<img loading="lazy" src="src/assets/progress.png" alt="" class="md:max-h-80" />
+				<img loading="lazy" src={img_progress} alt="" class="md:max-h-80" />
 			</div>
 		</div>
 	</section>
@@ -93,7 +100,7 @@
 		</div>
 		<div class="flex justify-center">
 			<div class="pt-20 flex max-w-[1400px] flex-col md:flex-row">
-				<img loading="lazy" src="src/assets/joinourcommunity.png" alt="" class="md:max-h-80" />
+				<img loading="lazy" src={img_joinourcommunity} alt="" class="md:max-h-80" />
 				<div class="mt-12 md:mt-0 md:ml-12 flex justify-center flex-col">
 					<span class="block text-white text-2xl nunito">Be a part of something great!</span>
 					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
@@ -106,12 +113,3 @@
 		</div>
 	</section>
 </main>
-
-<style>
-	main {
-		background-image: url('src/assets/bg.png');
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
-	}
-</style>

@@ -1,8 +1,9 @@
 <script>
 	import '../app.css';
-	import PageLoader from '../lib/PageLoader.svelte';
+	import PageLoader from '$lib/PageLoader.svelte';
 	import LandingPageMenu from '$lib/LandingPageMenu.svelte';
 	import Icon from '@iconify/svelte';
+	import img_logo from '$lib/assets/Logo@4x.jpg';
 
 	let menuOpen = false;
 </script>
@@ -13,7 +14,7 @@
 	<div class="relative flex items-center z-10 flex-row">
 		<div>
 			<a href="/" class="">
-				<img src="src/assets/Logo@4x.jpg" alt="" class="h-10 min-w-fit" />
+				<img src={img_logo} alt="" class="h-10 max-w-fit" />
 			</a>
 		</div>
 		<div class="hidden md:block nunito text-xl text-[#b5b5b5] ml-28">
