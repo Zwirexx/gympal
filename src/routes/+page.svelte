@@ -4,18 +4,11 @@
 	import img_progress from '$lib/assets/progress.png';
 	import img_joinourcommunity from '$lib/assets/joinourcommunity.png';
 	import img_stripes from '$lib/assets/bg.png';
-	import { onMount } from 'svelte';
-	let isIOS = false;
-	onMount(() => {
-		if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-			isIOS = true;
-		}
-	});
 </script>
 
 <div class="absolute min-[1380px]:hidden top-0 right-0 z-0 gradient-yellow w-screen h-screen"></div>
 <title>Meet GymPal</title>
-<section class="bg-[#222222] max-h-[100svh] mx-10 my-32 md:mx-32 md:my-32 z-10">
+<section class="bg-[#222222] mx-10 my-32 md:mx-32 md:my-32 z-10">
 	<img
 		src={img_jackedguy}
 		alt=""
@@ -27,19 +20,17 @@
 			<span class="block">THINK LESS</span>
 			<span class="block">GET STRONG</span>
 		</div>
-		<div>
-			<span class="block text-[#b5b5b5] text-xl nunito mt-6 md:mt-12"
-				>Transform your fitness journey with our app. Monitor progress, set goals, and conquer
-				milestones effortlessly for a healthier, stronger you.
-			</span>
-		</div>
+
+		<span class="block text-[#b5b5b5] text-xl nunito mt-6 md:mt-12"
+			>Transform your fitness journey with our app. Monitor progress, set goals, and conquer
+			milestones effortlessly for a healthier, stronger you.
+		</span>
 
 		<a
 			href="https://youtu.be/gkjSXBCVo8E"
 			target="_blank"
 			type="button"
-			class="{isIOS ? 'mt-96' : 'mt-12'}
-			py-3 px-8 bg-[#F2FD84] max-w-56 text-xl font-bold nutino-sans hover:bg-opacity-85 transition-all duration-200"
+			class="block mt-12 py-3 bg-[#F2FD84] max-w-48 text-xl font-bold nutino-sans hover:bg-opacity-85 transition-all duration-200 text-center"
 			>JOIN NOW
 		</a>
 	</div>
