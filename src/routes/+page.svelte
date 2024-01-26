@@ -4,6 +4,13 @@
 	import img_progress from '$lib/assets/progress.png';
 	import img_joinourcommunity from '$lib/assets/joinourcommunity.png';
 	import img_stripes from '$lib/assets/bg.png';
+	import { onMount } from 'svelte';
+	let isIOS = false;
+	onMount(() => {
+		if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+			isIOS = true;
+		}
+	});
 </script>
 
 <div class="absolute min-[1380px]:hidden top-0 right-0 z-0 gradient-yellow w-screen h-screen"></div>
@@ -26,11 +33,13 @@
 				milestones effortlessly for a healthier, stronger you.
 			</span>
 		</div>
+
 		<a
 			href="https://youtu.be/gkjSXBCVo8E"
 			target="_blank"
 			type="button"
-			class="py-3 px-8 bg-[#F2FD84] max-w-56 text-xl font-bold nutino-sans mt-12 hover:bg-opacity-85 transition-all duration-200"
+			class="{isIOS ? 'mt-96' : 'mt-12'}
+			py-3 px-8 bg-[#F2FD84] max-w-56 text-xl font-bold nutino-sans hover:bg-opacity-85 transition-all duration-200"
 			>JOIN NOW
 		</a>
 	</div>
