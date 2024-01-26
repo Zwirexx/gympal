@@ -27,9 +27,9 @@
 					<Icon icon="ri:close-line" color="#F2FD84" width="4rem" height="4rem" />
 				</button>
 			</div>
-			<div class="flex flex-col nunito text-2xl text-[#b5b5b5]">
+			<div class="flex flex-col nunito text-2xl text-[#b5b5b5] h-1/3 justify-around">
 				<a
-					class="mb-16"
+					class=""
 					href="/"
 					on:click={() => {
 						menuOpen = false;
@@ -37,7 +37,7 @@
 					>Home
 				</a>
 				<a
-					class="mb-16"
+					class=""
 					href="/"
 					on:click={() => {
 						menuOpen = false;
@@ -45,7 +45,7 @@
 					>About Us
 				</a>
 				<a
-					class="mb-16"
+					class=""
 					href="/pricing"
 					on:click={() => {
 						menuOpen = false;
@@ -53,31 +53,31 @@
 					>Pricing
 				</a>
 				<a
-					class="mb-16"
+					class=""
 					href="/"
 					on:click={() => {
 						menuOpen = false;
 					}}
 					>Blog
 				</a>
-			</div>
-			<div class="nunito-sans font-bold text-xl text-white block">
-				<button
-					type="button"
-					class="py-3 px-8 border-2 bg-white bg-opacity-0 hover:bg-opacity-10 transition-all duration-200"
-					on:click={() => {
-						menuOpen = false;
-					}}
-					>Sign Up
-				</button>
-				<button
-					type="button"
-					class="py-3 px-8"
-					on:click={() => {
-						menuOpen = false;
-					}}
-					>Log In
-				</button>
+				<div class="nunito-sans font-bold text-xl text-white block">
+					<button
+						type="button"
+						class="py-3 px-8 border-2 bg-white bg-opacity-0 hover:bg-opacity-10 transition-all duration-200"
+						on:click={() => {
+							menuOpen = false;
+						}}
+						>Sign Up
+					</button>
+					<button
+						type="button"
+						class="py-3 px-8"
+						on:click={() => {
+							menuOpen = false;
+						}}
+						>Log In
+					</button>
+				</div>
 			</div>
 		</div>
 	</nav>

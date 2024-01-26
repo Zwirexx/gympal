@@ -8,10 +8,10 @@
 
 <div class="absolute xl:hidden top-0 right-0 z-0 gradient-yellow w-screen h-screen"></div>
 <title>Meet GymPal</title>
-<section class="bg-[#222222] h-screen px-10 pb-11 md:px-32 md:pb-11 z-10">
+<section class="bg-[#222222] max-h-screen px-10 py-32 md:px-32 md:py-32 z-10">
 	<img src={img_jackedguy} alt="" class="hidden xl:block absolute top-0 right-0 h-full z-0" />
-	<div class="relative flex z-10 flex-col justify-center h-full">
-		<div class="lg:max-w-[60%] mt-auto">
+	<div class="relative z-10">
+		<div class="lg:max-w-[60%]">
 			<div class="text-white text-7xl hakuna-sans font-bold">
 				<span class="block">THINK LESS</span>
 				<span class="block">GET STRONG</span>
@@ -30,29 +30,32 @@
 				>JOIN NOW
 			</a>
 		</div>
-		<div
-			class="flex flex-col md:flex-row glass w-full mb-0 mt-auto py-10 px-12 text-white items-center text-lg"
-		>
-			<div class="flex flex-col md:flex-row md:justify-evenly md:w-full">
-				<div class="mb-16 md:mb-0 md:mr-6">
-					<span class="block hakuna-sans text-5xl">100K</span>
-					<span class="block nunito font-bold">Active users</span>
-					<span class="block nunito text-[#b5b5b5]">Our community is growing fast!</span>
-				</div>
-				<div class="mb-16 md:mb-0 md:mr-6">
-					<span class="block hakuna-sans text-5xl">10</span>
-					<span class="block nunito font-bold">Free routines</span>
-					<span class="block nunito text-[#b5b5b5]">Pick from various workout plans.</span>
-				</div>
-				<div>
-					<span class="block hakuna-sans text-5xl">99%</span>
-					<span class="block nunito font-bold">Happy Customers</span>
-					<span class="block nunito text-[#b5b5b5]">Nearly everyone loves our app!</span>
-				</div>
+	</div>
+</section>
+<section class="bg-[#222222] max-h-screen px-10 pb-11 md:px-32 md:pb-11 z-10">
+	<div
+		class="flex flex-col md:flex-row glass w-full mb-0 mt-auto py-10 px-12 text-white items-center text-lg"
+	>
+		<div class="flex flex-col md:flex-row md:justify-evenly md:w-full">
+			<div class="mb-16 md:mb-0 md:mr-6">
+				<span class="block hakuna-sans text-5xl">100K</span>
+				<span class="block nunito font-bold">Active users</span>
+				<span class="block nunito text-[#b5b5b5]">Our community is growing fast!</span>
+			</div>
+			<div class="mb-16 md:mb-0 md:mr-6">
+				<span class="block hakuna-sans text-5xl">10</span>
+				<span class="block nunito font-bold">Free routines</span>
+				<span class="block nunito text-[#b5b5b5]">Pick from various workout plans.</span>
+			</div>
+			<div>
+				<span class="block hakuna-sans text-5xl">99%</span>
+				<span class="block nunito font-bold">Happy Customers</span>
+				<span class="block nunito text-[#b5b5b5]">Nearly everyone loves our app!</span>
 			</div>
 		</div>
 	</div>
 </section>
+
 <main
 	class="bg-[#222222] bg-no-repeat bg-center bg-cover z-10"
 	style="background-image: url({img_stripes});"

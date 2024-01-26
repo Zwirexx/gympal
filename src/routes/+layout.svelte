@@ -14,7 +14,7 @@
 	<div class="relative flex items-center z-10 flex-row">
 		<div>
 			<a href="/" class="">
-				<img src={img_logo} alt="" class="h-10 max-w-fit" />
+				<img src={img_logo} alt="" class="min-h-10 max-w-fit" />
 			</a>
 		</div>
 		<div class="hidden min-[1380px]:block nunito text-xl text-[#b5b5b5] ml-28">
