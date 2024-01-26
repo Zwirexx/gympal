@@ -4,15 +4,8 @@
 	import LandingPageMenu from '$lib/LandingPageMenu.svelte';
 	import Icon from '@iconify/svelte';
 	import img_logo from '$lib/assets/Logo.svg';
-	import { onMount } from 'svelte';
 
 	let menuOpen = false;
-	let isIOS = false;
-	onMount(() => {
-		if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-			isIOS = true;
-		}
-	});
 </script>
 
 <PageLoader />
@@ -49,14 +42,9 @@
 		</div>
 	</div>
 </nav>
-{#if !isIOS}
-	<slot />
-{:else}
-	<div class="flex flex-col items-center justify-center h-screen">
-		<div class="text-white text-3xl text-center">Sorry, this app is not available on iOS.</div>
-		<div class="text-white text-3xl text-center">Please use a desktop or Android device.</div>
-	</div>
-{/if}
+
+<slot />
+
 <footer class="text-white">
 	<div class="bg-[#181818] md:px-32 py-16 flex justify-center">
 		<div class="md:w-1/3 w-1/2 flex justify-between">
