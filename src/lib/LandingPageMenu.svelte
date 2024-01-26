@@ -24,7 +24,7 @@
 						menuOpen = false;
 					}}
 				>
-					<Icon icon="ri:close-line" color="#F2FD84" width="4rem" height="4rem" />
+					<Icon icon="ri:close-line" color="#F2FD84" width="3rem" height="3rem" />
 				</button>
 			</div>
 			<div class="flex flex-col nunito text-2xl text-[#b5b5b5] h-1/3 justify-around">

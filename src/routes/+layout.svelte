@@ -37,7 +37,7 @@
 					menuOpen = true;
 				}}
 			>
-				<Icon icon="ri:menu-line" color="#F2FD84" width="4rem" height="4rem" />
+				<Icon icon="ri:menu-line" color="#F2FD84" width="3rem" height="3rem" />
 			</button>
 		</div>
 	</div>

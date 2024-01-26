@@ -6,12 +6,16 @@
 	import img_stripes from '$lib/assets/bg.png';
 </script>
 
-<div class="absolute xl:hidden top-0 right-0 z-0 gradient-yellow w-screen h-screen"></div>
+<div class="absolute min-[1380px]:hidden top-0 right-0 z-0 gradient-yellow w-screen h-screen"></div>
 <title>Meet GymPal</title>
 <section class="bg-[#222222] max-h-screen px-10 py-32 md:px-32 md:py-32 z-10">
-	<img src={img_jackedguy} alt="" class="hidden xl:block absolute top-0 right-0 h-full z-0" />
+	<img
+		src={img_jackedguy}
+		alt=""
+		class="hidden min-[1380px]:block absolute top-0 right-0 h-full z-0"
+	/>
 	<div class="relative z-10">
-		<div class="lg:max-w-[60%]">
+		<div class="lg:max-w-[75ch]">
 			<div class="text-white text-7xl hakuna-sans font-bold">
 				<span class="block">THINK LESS</span>
 				<span class="block">GET STRONG</span>
@@ -57,7 +61,7 @@
 </section>
 
 <main
-	class="bg-[#222222] bg-no-repeat bg-center bg-cover z-10"
+	class="bg-[#222222] bg-no-repeat bg-center bg-cover relative z-10"
 	style="background-image: url({img_stripes});"
 >
 	<section class="px-10 pb-11 md:px-32 md:pb-28">
@@ -79,7 +83,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="px-10 pb-11 md:px-32 md:pb-28">
+	<section class=" px-10 pb-11 md:px-32 md:pb-28">
 		<div class="flex justify-center">
 			<div class="text-white text-6xl hakuna-sans font-bold">
 				<span class="block">MEASURE YOUR PROGRESS</span>
