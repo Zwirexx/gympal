@@ -3,7 +3,7 @@
 	import PageLoader from '$lib/PageLoader.svelte';
 	import LandingPageMenu from '$lib/LandingPageMenu.svelte';
 	import Icon from '@iconify/svelte';
-	import img_logo from '$lib/assets/Logo@4x.jpg';
+	import img_logo from '$lib/assets/Logo.svg';
 
 	let menuOpen = false;
 </script>
@@ -17,13 +17,13 @@
 				<img src={img_logo} alt="" class="h-10 max-w-fit" />
 			</a>
 		</div>
-		<div class="hidden md:block nunito text-xl text-[#b5b5b5] ml-28">
+		<div class="hidden min-[1380px]:block nunito text-xl text-[#b5b5b5] ml-28">
 			<a class="mr-16" href="/">Home</a>
 			<a class="mr-16" href="/">About Us</a>
 			<a class="mr-16" href="/pricing">Pricing</a>
 			<a class="mr-16" href="/">Blog</a>
 		</div>
-		<div class="nunito-sans font-bold text-xl text-white ml-auto hidden md:block">
+		<div class="nunito-sans font-bold text-xl text-white ml-auto hidden min-[1380px]:block">
 			<button
 				type="button"
 				class="py-3 px-8 border-2 bg-white bg-opacity-0 hover:bg-opacity-10 transition-all duration-200"
@@ -31,7 +31,7 @@
 			>
 			<button type="button" class="py-3 px-8">Log In</button>
 		</div>
-		<div class="flex justify-end w-full md:hidden">
+		<div class="flex justify-end w-full min-[1380px]:hidden">
 			<button
 				on:click={() => {
 					menuOpen = true;

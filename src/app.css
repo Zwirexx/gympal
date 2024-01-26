@@ -56,4 +56,7 @@ body {
   -webkit-backdrop-filter: blur( 6px );
   border: 1px solid #b5b5b5;
 }
+.gradient-yellow{
+  background: radial-gradient(at top right, rgba(242,253,132,.1) 0%, rgba(255,255,255,0) 50%);
+}
 

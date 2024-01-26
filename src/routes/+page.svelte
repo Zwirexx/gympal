@@ -6,11 +6,12 @@
 	import img_stripes from '$lib/assets/bg.png';
 </script>
 
+<div class="absolute xl:hidden top-0 right-0 z-0 gradient-yellow w-screen h-screen"></div>
 <title>Meet GymPal</title>
-<section class="bg-[#222222] h-screen px-10 pb-11 md:px-32 md:pb-11">
-	<img src={img_jackedguy} alt="" class="hidden md:block absolute top-0 right-0 h-full z-0" />
+<section class="bg-[#222222] h-screen px-10 pb-11 md:px-32 md:pb-11 z-10">
+	<img src={img_jackedguy} alt="" class="hidden xl:block absolute top-0 right-0 h-full z-0" />
 	<div class="relative flex z-10 flex-col justify-center h-full">
-		<div class="md:max-w-[60%] mt-auto">
+		<div class="lg:max-w-[60%] mt-auto">
 			<div class="text-white text-7xl hakuna-sans font-bold">
 				<span class="block">THINK LESS</span>
 				<span class="block">GET STRONG</span>
@@ -30,28 +31,30 @@
 			</a>
 		</div>
 		<div
-			class="flex flex-col md:flex-row glass w-full mb-0 mt-auto py-10 text-white justify-evenly items-center text-lg"
+			class="flex flex-col md:flex-row glass w-full mb-0 mt-auto py-10 px-12 text-white items-center text-lg"
 		>
-			<div class="mb-16 md:mb-0">
-				<span class="block hakuna-sans text-5xl">100K</span>
-				<span class="block nunito font-bold">Active users</span>
-				<span class="block nunito text-[#b5b5b5]">Our community is growing fast!</span>
-			</div>
-			<div class="mb-16 md:mb-0">
-				<span class="block hakuna-sans text-5xl">10</span>
-				<span class="block nunito font-bold">Free routines</span>
-				<span class="block nunito text-[#b5b5b5]">Pick from various workout plans.</span>
-			</div>
-			<div>
-				<span class="block hakuna-sans text-5xl">99%</span>
-				<span class="block nunito font-bold">Happy Customers</span>
-				<span class="block nunito text-[#b5b5b5]">Nearly everyone loves our app!</span>
+			<div class="flex flex-col md:flex-row md:justify-evenly md:w-full">
+				<div class="mb-16 md:mb-0 md:mr-6">
+					<span class="block hakuna-sans text-5xl">100K</span>
+					<span class="block nunito font-bold">Active users</span>
+					<span class="block nunito text-[#b5b5b5]">Our community is growing fast!</span>
+				</div>
+				<div class="mb-16 md:mb-0 md:mr-6">
+					<span class="block hakuna-sans text-5xl">10</span>
+					<span class="block nunito font-bold">Free routines</span>
+					<span class="block nunito text-[#b5b5b5]">Pick from various workout plans.</span>
+				</div>
+				<div>
+					<span class="block hakuna-sans text-5xl">99%</span>
+					<span class="block nunito font-bold">Happy Customers</span>
+					<span class="block nunito text-[#b5b5b5]">Nearly everyone loves our app!</span>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 <main
-	class="bg-[#222222] bg-no-repeat bg-center bg-cover"
+	class="bg-[#222222] bg-no-repeat bg-center bg-cover z-10"
 	style="background-image: url({img_stripes});"
 >
 	<section class="px-10 pb-11 md:px-32 md:pb-28">
@@ -61,8 +64,8 @@
 			</div>
 		</div>
 		<div class="flex justify-center">
-			<div class="pt-20 flex max-w-[1400px] flex-col md:flex-row">
-				<img loading="lazy" src={img_easytracking} alt="" class="md:max-h-80" />
+			<div class="pt-20 flex xl:max-w-[1400px] flex-col xl:flex-row items-center">
+				<img loading="lazy" src={img_easytracking} alt="" class="md:max-h-80 w-fit" />
 				<div class="mt-12 md:mt-0 md:ml-12 flex justify-center flex-col">
 					<span class="block text-white text-2xl nunito">The easy way to track your workouts.</span>
 					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
@@ -80,7 +83,7 @@
 			</div>
 		</div>
 		<div class="flex justify-center">
-			<div class="pt-20 flex max-w-[1400px] flex-col-reverse md:flex-row">
+			<div class="pt-20 flex max-w-[1400px] flex-col-reverse xl:flex-row items-center">
 				<div class="mt-12 md:mt-0 md:mr-12 flex justify-center flex-col">
 					<span class="block text-white text-2xl nunito">See your progress unfold!</span>
 					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
@@ -88,7 +91,7 @@
 						time, watch your strength grow, and celebrate your achievements.
 					</span>
 				</div>
-				<img loading="lazy" src={img_progress} alt="" class="md:max-h-80" />
+				<img loading="lazy" src={img_progress} alt="" class="md:max-h-80 w-fit" />
 			</div>
 		</div>
 	</section>
@@ -99,8 +102,8 @@
 			</div>
 		</div>
 		<div class="flex justify-center">
-			<div class="pt-20 flex max-w-[1400px] flex-col md:flex-row">
-				<img loading="lazy" src={img_joinourcommunity} alt="" class="md:max-h-80" />
+			<div class="pt-20 flex max-w-[1400px] flex-col xl:flex-row items-center">
+				<img loading="lazy" src={img_joinourcommunity} alt="" class="md:max-h-80 w-fit" />
 				<div class="mt-12 md:mt-0 md:ml-12 flex justify-center flex-col">
 					<span class="block text-white text-2xl nunito">Be a part of something great!</span>
 					<span class="block text-[#b5b5b5] text-xl nunito mt-2"
