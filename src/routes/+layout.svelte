@@ -48,12 +48,20 @@
 <footer class="text-white">
 	<div class="bg-[#181818] md:px-32 py-16 flex justify-center">
 		<div class="md:w-1/3 w-1/2 flex justify-between">
-			<a href="/"><Icon icon="ri:instagram-line" color="#F2FD84" width="3rem" height="3rem" /> </a>
-			<a href="/"
-				><Icon icon="ri:facebook-circle-line" color="#F2FD84" width="3rem" height="3rem" />
+			<a href="/" class="hover:opacity-75 transition-all duration-200">
+				<Icon icon="ri:instagram-line" color="#F2FD84" width="3rem" height="3rem" />
 			</a>
-			<a href="/"><Icon icon="ri:twitter-x-fill" color="#F2FD84" width="3rem" height="3rem" /> </a>
-			<a href="https://github.com/Zwirexx" target="_blank">
+			<a href="/" class="hover:opacity-75 transition-all duration-200">
+				<Icon icon="ri:facebook-circle-line" color="#F2FD84" width="3rem" height="3rem" />
+			</a>
+			<a href="/" class="hover:opacity-75 transition-all duration-200">
+				<Icon icon="ri:twitter-x-fill" color="#F2FD84" width="3rem" height="3rem" />
+			</a>
+			<a
+				href="https://github.com/Zwirexx"
+				target="_blank"
+				class="hover:opacity-75 transition-all duration-200"
+			>
 				<Icon icon="ri:github-line" color="#F2FD84" width="3rem" height="3rem" />
 			</a>
 		</div>
