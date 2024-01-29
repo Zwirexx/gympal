@@ -1,6 +1,5 @@
 <script>
 	import FitnessApp from '$lib/assets/undraw_fitness_tracker_3033.svg';
-
 	import img_easytracking from '$lib/assets/easytracking.png';
 	import img_progress from '$lib/assets/progress.png';
 	import img_joinourcommunity from '$lib/assets/joinourcommunity.png';
