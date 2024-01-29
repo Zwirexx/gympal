@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 480px) {
+	html {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 320px) {
+	html {
+		font-size: 10px;
+	}
+}

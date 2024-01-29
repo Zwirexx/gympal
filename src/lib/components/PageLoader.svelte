@@ -58,7 +58,7 @@
 <style>
 	progress {
 		--bar-color: transparent;
-		--val-color: #f3fd84af;
+		--val-color: #4495ff;
 		position: fixed;
 		top: 0;
 		z-index: 99999;
