@@ -1,8 +1,8 @@
 <script>
 	import img_fitnessapp from '$lib/assets/undraw_fitness_tracker_3033.svg';
-	import img_easytracking from '$lib/assets/easytracking.png';
-	import img_progress from '$lib/assets/progress.png';
-	import img_joinourcommunity from '$lib/assets/joinourcommunity.png';
+	import img_easytracking from '$lib/assets/easytracking.webp';
+	import img_progress from '$lib/assets/progress.webp';
+	import img_joinourcommunity from '$lib/assets/joinourcommunity.webp';
 </script>
 
 <header class="h-[80svh] lg:h-[90svh] flex justify-center px-10">
