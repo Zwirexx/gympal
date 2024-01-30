@@ -10,7 +10,7 @@
 		class="lg:grid lg:grid-cols-2 gap-4 items-center justify-items-center py-[25svh] lg:translate-x-24"
 	>
 		<div class="flex space-y-8 flex-col">
-			<h1 class="text-6xl">THINK LESS<br />GET STRONG</h1>
+			<h1 class="text-6xl font-bold">THINK LESS<br />GET STRONG</h1>
 			<p class="text-lg text-surface-300 max-w-[70ch]">
 				Transform your fitness journey with our app. Monitor progress, set goals, and conquer
 				milestones effortlessly for a healthier, stronger you.
@@ -34,9 +34,9 @@
 		<div class="pt-20 flex xl:max-w-[1400px] flex-col xl:flex-row items-center">
 			<img loading="lazy" src={img_easytracking} alt="" class="md:max-h-80 w-fit" />
 			<div class="mt-12 md:mt-0 md:ml-12 flex justify-center flex-col">
-				<span class="block text-white text-2xl font-semibold"
-					>The easy way to track your workouts.</span
-				>
+				<h1 class="block text-white text-2xl font-semibold">
+					The easy way to track your workouts.
+				</h1>
 				<span class="block text-[#b5b5b5] text-xl mt-2"
 					>No more math headaches - our built-in calculator does the heavy lifting. Just log your
 					exercises, and let us handle the rest. Easy, right? Focus on your gains, not the math.
@@ -48,7 +48,7 @@
 <section class=" px-10 pb-11 md:px-32 md:pb-28">
 	<div class="flex justify-center">
 		<div class="text-white text-6xl font-bold">
-			<span class="block">MEASURE YOUR PROGRESS</span>
+			<h1 class="block">MEASURE YOUR PROGRESS</h1>
 		</div>
 	</div>
 	<div class="flex justify-center">
@@ -67,7 +67,7 @@
 <section class="px-10 pb-11 md:px-32 md:pb-28">
 	<div class="flex justify-center">
 		<div class="text-white text-6xl font-bold">
-			<span class="block">JOIN OUR COMMUNITY</span>
+			<h1 class="block">JOIN OUR COMMUNITY</h1>
 		</div>
 	</div>
 	<div class="flex justify-center">
