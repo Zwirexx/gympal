@@ -1,6 +1,6 @@
 <script>
 	import { getDrawerStore } from '@skeletonlabs/skeleton';
-
+	import Icon from '@iconify/svelte';
 	const drawerStore = getDrawerStore();
 
 	function drawerClose() {
@@ -9,6 +9,12 @@
 </script>
 
 <nav class="list-nav p-14 space-y-4">
+	<div class="flex">
+		<button class="btn hover:variant-soft-primary" on:click={drawerClose}>
+			<Icon icon="ri:arrow-left-line" color="white" width="2rem" height="2rem" />
+		</button>
+	</div>
+
 	<ul>
 		<li>
 			<a href="/" class="btn hover:variant-soft-primary" on:click={drawerClose}> Home </a>

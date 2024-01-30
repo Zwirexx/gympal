@@ -7,8 +7,9 @@
 	import Navigation from '$lib/components/Navigation.svelte';
 	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import Icon from '@iconify/svelte';
-
+	import { Modal, getModalStore } from '@skeletonlabs/skeleton';
 	initializeStores();
+
 	const drawerSettings = {
 		position: 'right',
 		bgBackdrop: 'bg-surface-900 bg-opacity-80',
@@ -21,6 +22,7 @@
 </script>
 
 <PageLoader></PageLoader>
+<Modal />
 <Drawer><Navigation /></Drawer>
 <AppShell scrollbarGutter="auto">
 	<svelte:fragment slot="header">
@@ -39,7 +41,7 @@
 
 			<svelte:fragment slot="trail">
 				<div class="hidden lg:block">
-					<a href="/login" class="btn hover:variant-soft-primary">Log In</a>
+					<a href="/login" class="btn hover:variant-soft-primary">Log in</a>
 					<a href="/register" class="btn variant-filled-tertiary">Create account</a>
 				</div>
 
