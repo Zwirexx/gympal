@@ -4,6 +4,7 @@
 	import { popup } from '@skeletonlabs/skeleton';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	import Icon from '@iconify/svelte';
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 	export let theme;
 
@@ -21,6 +22,7 @@
 </button>
 
 <div class="bg-surface-700 rounded-xl w-48 shadow-xl py-2" data-popup="popupCombobox">
+	<div>Jasny ciemny: <LightSwitch /></div>
 	<ListBox rounded="rounded-none">
 		<ListBoxItem bind:group={theme} name="medium" value="vintage">📺 Vintage</ListBoxItem>
 		<ListBoxItem bind:group={theme} name="medium" value="crimson">🍎 Crimson</ListBoxItem>
