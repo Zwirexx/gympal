@@ -4,7 +4,6 @@
 	import { Modal, getModalStore } from '@skeletonlabs/skeleton';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import Icon from '@iconify/svelte';
-	import ComboBoxTheme from '$lib/components/ComboBoxTheme.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
 	import PageLoader from '$lib/components/PageLoader.svelte';
 
@@ -12,22 +11,6 @@
 	import Logo from '$lib/assets/Logo.svg';
 
 	initializeStores();
-
-	let theme = 'wintry';
-
-	onMount(() => {
-		setBodyTheme(theme);
-	});
-
-	$: {
-		setBodyTheme(theme);
-	}
-
-	function setBodyTheme(theme) {
-		if (typeof document !== 'undefined') {
-			document.body.setAttribute('data-theme', theme);
-		}
-	}
 
 	const drawerSettings = {
 		position: 'right',
@@ -61,7 +44,6 @@
 			</div>
 
 			<svelte:fragment slot="trail">
-				<ComboBoxTheme bind:theme />
 				<div class="hidden lg:block">
 					<a href="/login" class="btn hover:variant-soft-primary">Log in</a>
 					<a href="/register" class="btn variant-filled-tertiary">Create account</a>
