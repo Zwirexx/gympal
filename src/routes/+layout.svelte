@@ -1,24 +1,22 @@
-<script>
-	import { onMount } from 'svelte';
-	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
-	import { Modal, getModalStore } from '@skeletonlabs/skeleton';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import Icon from '@iconify/svelte';
-	import Navigation from '$lib/components/Navigation.svelte';
-	import PageLoader from '$lib/components/PageLoader.svelte';
+<script lang="ts">
+    import { initializeStores, Drawer, getDrawerStore, Modal, AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import type { DrawerSettings } from '@skeletonlabs/skeleton';
+    import Icon from '@iconify/svelte';
+    import Navigation from '$lib/components/Navigation.svelte';
+    import PageLoader from '$lib/components/PageLoader.svelte';
 
-	import '../app.postcss';
-	import Logo from '$lib/assets/Logo.svg';
+    import '../app.pcss';
+    import Logo from '$lib/assets/Logo.svg';
 
-	initializeStores();
+    initializeStores();
 
-	const drawerSettings = {
-		position: 'right',
-		bgBackdrop: 'bg-surface-900 bg-opacity-80',
-		width: 'w-2/3'
-	};
+    const drawerSettings: DrawerSettings  = {
+        position: 'right',
+        bgBackdrop: 'bg-surface-900 bg-opacity-80',
+        width: 'w-2/3'
+    };
 
-	const drawerStore = getDrawerStore();
+    const drawerStore = getDrawerStore();
 
 	function drawerOpen() {
 		drawerStore.open(drawerSettings);
@@ -33,7 +31,7 @@
 		<AppBar>
 			<svelte:fragment slot="lead">
 				<a href="/">
-					<img src={Logo} alt="" class="btn" />
+					<img src={Logo} alt="Logo" class="btn" />
 				</a>
 			</svelte:fragment>
 			<div class="hidden lg:block">

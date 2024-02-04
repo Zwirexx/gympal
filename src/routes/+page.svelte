@@ -1,28 +1,29 @@
-<script>
+<script lang="ts">
 	import img_fitnessapp from '$lib/assets/undraw_fitness_tracker_3033.svg';
 	import img_easytracking from '$lib/assets/easytracking.webp';
 	import img_progress from '$lib/assets/progress.webp';
 	import img_joinourcommunity from '$lib/assets/joinourcommunity.webp';
+	function joinNow() {
+        console.log('Join Now');
+    }
 </script>
 
 <header class="h-[80svh] lg:h-[90svh] flex justify-center px-10">
-	<div
-		class="lg:grid lg:grid-cols-2 gap-4 items-center justify-items-center py-[25svh] lg:translate-x-24"
-	>
-		<div class="flex space-y-8 flex-col">
-			<h1 class="text-6xl font-bold">THINK LESS<br />GET STRONG</h1>
-			<p class="text-lg text-surface-300 max-w-[70ch]">
-				Transform your fitness journey with our app. Monitor progress, set goals, and conquer
-				milestones effortlessly for a healthier, stronger you.
-			</p>
-			<div>
-				<button class="btn variant-filled-primary">Join Now</button>
-			</div>
-		</div>
-		<div class="hidden lg:block">
-			<img src={img_fitnessapp} alt="" class="max-h-96" id="fitnessapp" />
-		</div>
-	</div>
+    <div class="lg:grid lg:grid-cols-2 gap-4 items-center justify-items-center py-[25svh] lg:translate-x-24">
+        <div class="flex space-y-8 flex-col">
+            <h1 class="text-6xl font-bold">THINK LESS<br />GET STRONG</h1>
+            <p class="text-lg text-surface-300 max-w-[70ch]">
+                Transform your fitness journey with our app. Monitor progress, set goals, and conquer
+                milestones effortlessly for a healthier, stronger you.
+            </p>
+            <div>
+                <button class="btn variant-filled-primary" on:click={joinNow}>Join Now</button>
+            </div>
+        </div>
+        <div class="hidden lg:block">
+            <img src={img_fitnessapp} alt="Fitness App Illustration" class="max-h-96" id="fitnessapp" />
+        </div>
+    </div>
 </header>
 <section class="px-10 pb-11 md:px-32 md:pb-28">
 	<div class="flex justify-center">

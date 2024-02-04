@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
 	import { navigating } from '$app/stores';
@@ -6,7 +6,7 @@
 
 	// progress bar value
 	const p = tweened(0, {
-		duration: 100,
+		duration: 200,
 		easing: cubicOut
 	});
 
@@ -52,13 +52,13 @@
 </script>
 
 {#if $p > 0 && $p < 1 && isVisible}
-	<progress value={$p} transition:fade={{ duration: 250 }} />
+	<progress value={$p} transition:fade={{ duration: 200 }} />
 {/if}
 
 <style>
 	progress {
 		--bar-color: transparent;
-		--val-color: #4495ff;
+		--val-color: #F41945;
 		position: fixed;
 		top: 0;
 		z-index: 99999;

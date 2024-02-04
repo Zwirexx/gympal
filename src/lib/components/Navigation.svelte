@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { getDrawerStore } from '@skeletonlabs/skeleton';
 	import Icon from '@iconify/svelte';
 	const drawerStore = getDrawerStore();

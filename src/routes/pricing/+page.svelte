@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
 
 	let annually = false;
+
 </script>
 
 <div class="w-full flex items-center flex-col">
@@ -22,7 +23,7 @@
 		<!-- PRACE NAD ANIMACJĄ -->
 		<!-- DO POPRAWY -->
 		{#if !annually}
-			<div class="card p-6 w-1/3 variant-ghost-surface h-2/3">
+			<div class="card p-6 w-screen md:w-fit md:min-w-1/3 variant-ghost-surface h-2/3">
 				<header class="card-header">
 					<div class="flex space-x-12 items-center justify-center">
 						<div class="flex flex-col space-y-3 w-[10ch]">
@@ -57,7 +58,7 @@
 				</footer>
 			</div>
 
-			<div class="card p-6 w-fit variant-ghost-surface h-2/3">
+			<div class="card p-6 w-screen md:w-fit variant-ghost-surface h-2/3">
 				<header class="card-header">
 					<div class="flex space-x-12 items-center justify-center">
 						<div class="flex flex-col space-y-3 w-[10ch]">
@@ -92,7 +93,7 @@
 				</footer>
 			</div>
 		{:else}
-			<div class="card p-6 w-1/3 variant-ghost-surface h-2/3">
+			<div class="card p-6 w-screen md:w-fit md:min-w-1/3 variant-ghost-surface h-2/3">
 				<header class="card-header">
 					<div class="flex space-x-12 items-center justify-center">
 						<div class="flex flex-col space-y-3 w-[10ch]">
@@ -134,7 +135,7 @@
 					class="badge variant-filled-warning absolute top-0 right-0 mt-[-1rem] mr-[-2rem] z-10 text-lg px-4 py-1"
 					>-21% OFF</span
 				>
-				<div class="card p-6 w-fit variant-ghost-surface h-2/3">
+				<div class="card p-6 w-screen md:w-fit variant-ghost-surface h-2/3">
 					<header class="card-header">
 						<div class="flex space-x-12 items-center justify-center">
 							<div class="flex flex-col space-y-3 w-[10ch]">
