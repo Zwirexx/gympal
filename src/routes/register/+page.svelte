@@ -1,5 +1,8 @@
 <script lang="ts">
+
 	import Icon from '@iconify/svelte';
+	import { onMount } from 'svelte';
+
 </script>
 
 <div class="w-screen h-full justify-center flex items-center p-8 md:p-20">

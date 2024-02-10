@@ -17,7 +17,7 @@
    </RadioGroup>
    <div
       class="w-fit h-full grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-4">
-      <div class="card p-6 h-full variant-ghost-surface" >
+      <div class="card card-hover p-6 h-full variant-ghost-surface" >
          <header class="card-header">
             <div class="flex space-x-12 items-center justify-center">
                <div class="flex flex-col space-y-3 w-[10ch]">
@@ -63,7 +63,7 @@
             >-21% OFF 
          </span>
          {/if}
-         <div class="card h-full p-6 variant-ghost-surface" >
+         <div class="card card-hover h-full p-6 variant-ghost-surface" >
             <header class="card-header">
                <div class="flex space-x-12 items-center justify-center">
                   <div class="flex flex-col space-y-3 w-[10ch]">
@@ -107,4 +107,6 @@
          </div>
       </div>
    </div>
+   
 </main>
+

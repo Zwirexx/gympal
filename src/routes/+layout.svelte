@@ -4,10 +4,17 @@
     import Icon from '@iconify/svelte';
     import Navigation from '$lib/components/Navigation.svelte';
     import PageLoader from '$lib/components/PageLoader.svelte';
-
     import '../app.pcss';
     import Logo from '$lib/assets/Logo.svg';
+import { afterNavigate } from "$app/navigation";
+  
+  let navbar: HTMLElement;
 
+  afterNavigate(() => {
+    if (navbar) { 
+      navbar.scrollIntoView();
+    }
+  });
     initializeStores();
 
     const drawerSettings: DrawerSettings  = {
@@ -26,9 +33,9 @@
 <PageLoader></PageLoader>
 <Modal />
 <Drawer><Navigation /></Drawer>
-<AppShell scrollbarGutter="auto">
+<AppShell scrollbarGutter="auto" >
 	<svelte:fragment slot="header">
-		<AppBar>
+		<AppBar >
 			<svelte:fragment slot="lead">
 				<a href="/">
 					<img src={Logo} alt="Logo" class="btn" />
@@ -55,8 +62,10 @@
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-
+<div bind:this={navbar}>
 	<slot />
+</div>
+
 	<svelte:fragment slot="pageFooter">
 		<div class="text-white">
 			<div class="flex justify-center bg-surface-900 py-12">
